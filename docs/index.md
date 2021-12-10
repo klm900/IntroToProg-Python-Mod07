@@ -1,16 +1,17 @@
 # Pickling & Structured Error Handling
-KLM, 12.12.2021
+**Dev:** KLM  
+**Date:** 12.12.2021  
 
 ## Introduction
-This assignment and module introduced custom error handling, more advanced file handling, and the use of pickling and binary files. The goal of the assignment is to illustrate pickling and structured error handling, and to practice independent research. The results are posted to a new GitHub website in addition to the standard documents.
-
+This assignment and module introduced custom error handling, more advanced file handling, and the use of pickling and binary files. The goal of the assignment is to illustrate pickling and structured error handling, and to practice independent research. The results are posted to a new GitHub website in addition to the standard documents.  
+  
 ## Concepts
 ### Binary Files & Pickling
 Binary files contain data stored as bytes, not as text characters, and require specific applications to be read. Because they encode custom data types, binary files are not readable by eye like text files are. However, in Python this also means that they can be used to store an entire data object instead of reading it in and out if its native format to a text file. Picking is the name of the Python process used to preserve, or serialize, a complex data object so that it can be unpickled and used later in its original form.      
 ### File Handling
 For both text and binary files, there are built-in Python commands for basic file handling tasks such as opening, reading, writing, appending, and closing. While these can be used ad hoc, building them into custom functions allows you to address various common scenarios and easily re-use the code elsewhere. Best practices such as closing the file after use are easy to build into a function. In addition, creating custom functions and a using a separation of concerns structure facilitates clear error handling. 
 ### Structured Error Handling       
-Structured error handling is a way of organizing code that might introduce errors into a section to try, followed by one or more “except” sections to move through if the try block gives an error. Each except section can be set up to capture an error type, from specific to more general, and execute code customized to that error type. This format is much more helpful and polished than the alternative, in which the program crashes and the user receives Python’s auto-generated error messages. While these can still be captured and shown to the user in structured error handling, using try/except blocks allows the errors to be understood in the context of the specific program and task. Python error information is contained in the Exception class, and a developer can add a custom exception to this class which will behave like a Python error. This is typically done to handle cases they want to disallow in their script, but which would not raise a Python-generated error.
+Structured error handling is a way of organizing code that might introduce errors into a section to try, followed by one or more “except” sections to move through if the try block gives an error. Each except section can be set up to capture an error type, from specific to more general, and execute code customized to that error type. This format is much more helpful and polished than the alternative, in which the program crashes and the user receives Python’s auto-generated error messages. While these can still be captured and shown to the user in structured error handling, using try/except blocks allows the errors to be understood in the context of the specific program and task. Python error information is contained in the Exception class, and a developer can add a custom exception to this class which will behave like a Python error. This is typically done to handle cases they want to disallow in their script, but which would not raise a Python-generated error.  
 
 ## RSVP Script
 This script helps the user track the RSVP list for an upcoming party. The user has three options, which are repeated until the exit option is selected: they can enter a guest name and number, view the current RSVP list, or save and exit. The RSVP entries are stored as a list of dictionary rows, and at the end the entire list is pickled to a binary file called RSVP.dat. If the file already exists in the directory when the user begins the program, it unpickles the list and starts to add to it. The script incorporates structured error handling using built-in and custom exceptions to make it easier for the user to understand and correct course when something goes wrong.     
@@ -45,10 +46,10 @@ class CustomException_UserChoice(Exception):
         return 'Oops! Please enter either 1, 2, or 3.'
 ```
 ### Running the Script
-After a great deal of troubleshooting, the script ran as expected in both PyCharm and terminal. A list can be started and saved in one program, and added to in the other, as shown in the progression below. The script handles several likely error cases, and also adjusts if the file is empty.
+After a great deal of troubleshooting, the script ran as expected in both PyCharm and terminal. A list can be started and saved in one program, and added to in the other, as shown in the progression below. The script handles several likely error cases, and also adjusts if the file is empty.  
 
 ## Conclusion
-Developing this script to illustrate pickling and structured error handling taught me about these concepts and others, and gave me important practice debugging and thinking through my code. In addition, I learned to present documents like this one on GitHub pages using Markdown. The tasks for this module have helped me feel more confident planning, developing, and presenting code on my own.
+Developing this script to illustrate pickling and structured error handling taught me about these concepts and others, and gave me important practice debugging and thinking through my code. In addition, I learned to present documents like this one on GitHub pages using Markdown. The tasks for this module have helped me feel more confident planning, developing, and presenting code on my own.  
 
 ## Appendix: Useful links
 ### Pickling

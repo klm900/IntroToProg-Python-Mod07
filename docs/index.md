@@ -23,7 +23,7 @@ This script helps the user track the RSVP list for an upcoming party. The user h
 I planned out the program using pseudocode and the general menu selection structure of Assignment06. I had a general plan for where I would use structured error handling and pickling. However, through the process of writing and code and running into errors myself, the final product took a much different track.
 
 _Figure 1: Pseudocode with initial functions, test run_
-![Figure 1](images/Figure01.jpg)
+![Figure 1](images/Figure01.png)
 
 #### Development
 As I built out the script, I re-used functions from similar scripts such as Assignment06 and the Module07 labs whenever possible. However, even with relatively similar content a number of adjustments were needed to make the script run as expected. The use of pickling made some steps much easier, such as loading data from the file. But other elements of pickling only became clear to me as I ran up against errors. Corrections and improvements I made included:
@@ -49,7 +49,7 @@ except FileNotFoundError:  # If the file does not yet exist, print a message and
 **ValueError:** For the sum function to work, the user must enter group_size as an integer. I used int() when defining group_size, but a text entry like “Mary” throws a ValueError. This exception returns the user to the menu to try again.
 
 _Figure 2: ValueError text from Python_  
-![Figure 2](images/Figure02.jpg)
+![Figure 2](images/Figure02.png)
 
 **CustomException_UserChoice:** I created a custom exception to display a reminder message when the user selection is not in the menu range.
 ```
@@ -72,7 +72,7 @@ _Figure 4.1: RSVP file picked from PyCharm_
 ![Figure 4.1](images/Figure04-1.jpg)
 
 _Figure 4.2: RSVP file unpickled in Terminal, guest added_  
-![Figure 4.2](images/Figure04-2.jpg)
+![Figure 4.2](images/Figure04-2.png)
 
 ## Conclusion
 Developing this script to illustrate pickling and structured error handling taught me about these concepts and others, and gave me important practice debugging and thinking through my code. In addition, I learned to present documents like this one on GitHub pages using Markdown. The tasks for this module have helped me feel more confident planning, developing, and presenting code on my own.  

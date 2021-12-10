@@ -36,7 +36,9 @@ try:  # If the file exists, unpickle it and load the list to the object rsvp_lst
 except FileNotFoundError:  # If the file does not yet exist, print a message and move on
     output_new_list_confirmation()  # Confirm to the user that this will be a new list
 ```
-**ValueError:** For the sum function to work, the user must enter group_size as an integer. I used int() when defining group_size, but a text entry like “Mary” throws a ValueError. This exception returns the user to the menu to try again.
+**ValueError:** For the sum function to work, the user must enter group_size as an integer. I used int() when defining group_size, but a text entry like “Mary” throws a ValueError. This exception returns the user to the menu to try again.  
+_Figure 2: ValueError text from Python_  
+![Figure 2](images/Figure02.png)
 **CustomException_UserChoice:** I created a custom exception to display a reminder message when the user selection is not in the menu range.
 ```
 class CustomException_UserChoice(Exception):
@@ -47,12 +49,28 @@ class CustomException_UserChoice(Exception):
     def __str__(self):
         return 'Oops! Please enter either 1, 2, or 3.'
 ```
+_Figure 3: Custom Exception shown PyCharm_  
+![Figure 3](images/Figure03.png)
 ### Running the Script
 After a great deal of troubleshooting, the script ran as expected in both PyCharm and terminal. A list can be started and saved in one program, and added to in the other, as shown in the progression below. The script handles several likely error cases, and also adjusts if the file is empty.  
+_Figure 4.1: RSVP file picked from PyCharm_  
+![Figure 4.1](images/Figure04-1.png)
+_Figure 4.2: RSVP file unpickled in Terminal, guest added_  
+![Figure 4.2](images/Figure04-2.png)
 
 ## Conclusion
 Developing this script to illustrate pickling and structured error handling taught me about these concepts and others, and gave me important practice debugging and thinking through my code. In addition, I learned to present documents like this one on GitHub pages using Markdown. The tasks for this module have helped me feel more confident planning, developing, and presenting code on my own.  
 
 ## Appendix: Useful links
 ### Pickling
+[Datacamp, Pickle in Python: Object Serialization](https://www.datacamp.com/community/tutorials/pickle-python-tutorial)
+[Real Python, The Python pickle Module: How to Persist Objects in Python](https://realpython.com/python-pickle-module/)
+[GeeksforGeeks, How to update a pickle file in Python?](https://www.geeksforgeeks.org/how-to-update-a-pickle-file-in-python/)
+[Na-Rae Han, Pickling](https://sites.pitt.edu/~naraehan/python3/pickling.html)
+[Better Programming, Don’t Fear the Pickle: Using pickle.dump and pickle.load](https://betterprogramming.pub/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce)
 ### Structured Error Handling
+[Python, Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
+[Python, Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)
+[Real Python, Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
+[Better Programming, Handling Errors in Python](https://betterprogramming.pub/handling-errors-in-python-9f1b32952423)
+[Data Camp, Exception and Error Handling in Python](https://www.datacamp.com/community/tutorials/exception-handling-python)

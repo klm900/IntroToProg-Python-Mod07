@@ -50,7 +50,7 @@ class CustomException_UserChoice(Exception):
         return 'Oops! Please enter either 1, 2, or 3.'
 ```
 _Figure 3: Custom Exception shown PyCharm_  
-![Figure 3](images/Figure03.png)
+![Figure 3](images/Figure02.jpg)
 ### Running the Script
 After a great deal of troubleshooting, the script ran as expected in both PyCharm and terminal. A list can be started and saved in one program, and added to in the other, as shown in the progression below. The script handles several likely error cases, and also adjusts if the file is empty.  
 _Figure 4.1: RSVP file picked from PyCharm_  

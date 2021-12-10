@@ -80,15 +80,15 @@ Developing this script to illustrate pickling and structured error handling taug
 ## Appendix: Useful links
 
 ### Pickling
-[Datacamp, Pickle in Python: Object Serialization](https://www.datacamp.com/community/tutorials/pickle-python-tutorial)
-[Real Python, The Python pickle Module: How to Persist Objects in Python](https://realpython.com/python-pickle-module/)
-[GeeksforGeeks, How to update a pickle file in Python?](https://www.geeksforgeeks.org/how-to-update-a-pickle-file-in-python/)
-[Na-Rae Han, Pickling](https://sites.pitt.edu/~naraehan/python3/pickling.html)
-[Better Programming, Don’t Fear the Pickle: Using pickle.dump and pickle.load](https://betterprogramming.pub/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce)
+[Datacamp, Pickle in Python: Object Serialization](https://www.datacamp.com/community/tutorials/pickle-python-tutorial)  
+[Real Python, The Python pickle Module: How to Persist Objects in Python](https://realpython.com/python-pickle-module/)  
+[GeeksforGeeks, How to update a pickle file in Python?](https://www.geeksforgeeks.org/how-to-update-a-pickle-file-in-python/)  
+[Na-Rae Han, Pickling](https://sites.pitt.edu/~naraehan/python3/pickling.html)  
+[Better Programming, Don’t Fear the Pickle: Using pickle.dump and pickle.load](https://betterprogramming.pub/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce)  
 
 ### Structured Error Handling
-[Python, Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
-[Python, Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)
-[Real Python, Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
-[Better Programming, Handling Errors in Python](https://betterprogramming.pub/handling-errors-in-python-9f1b32952423)
-[Data Camp, Exception and Error Handling in Python](https://www.datacamp.com/community/tutorials/exception-handling-python)
+[Python, Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)  
+[Python, Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)  
+[Real Python, Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)  
+[Better Programming, Handling Errors in Python](https://betterprogramming.pub/handling-errors-in-python-9f1b32952423)  
+[Data Camp, Exception and Error Handling in Python](https://www.datacamp.com/community/tutorials/exception-handling-python)  

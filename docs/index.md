@@ -35,7 +35,7 @@ As I built out the script, I re-used functions from similar scripts such as Assi
 I added most of the error handling towards the end of my work on the script, primarily based on errors I received. The final version of the script uses try/except blocks to catch exceptions and present custom messages in the following cases:
 
 ###### FileNotFoundError
-Used at the beginning of the script to differentiate runs where the file RSVP.dat is already present from runs where it is not. In the latter case, the user gets a message that this will be a new list. The file will be created at the end of the program if the user has entered data. The code for this block in the main body of the script is below
+Used at the beginning of the script to differentiate runs where the file RSVP.dat is already present from runs where it is not. In the latter case, the user gets a message that this will be a new list. The file will be created at the end of the program if the user has entered data. The code for this block in the main body of the script is below:
 
 ```
 # Try/Except block to check if the file already exists in the same directory
@@ -78,8 +78,8 @@ _Figure 3: Custom Exception shown PyCharm_
 #### Running the Script
 After a great deal of troubleshooting, the script ran as expected in both PyCharm and terminal. A list can be started and saved in one program, and added to in the other, as shown in the progression below. The script handles several likely error cases, and also adjusts if the file is empty.
 
-_Figure 4.1: RSVP file picked from PyCharm_  
-![Figure 4.1](images/Figure04-1.jpg)
+_Figure 4.1: RSVP file pickled from PyCharm_  
+![Figure 4.1](images/Figure04-1.png)
 
 _Figure 4.2: RSVP file unpickled in Terminal, guest added_  
 ![Figure 4.2](images/Figure04-2.png)

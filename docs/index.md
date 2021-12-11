@@ -61,7 +61,7 @@ _Figure 2: ValueError text from Python_
 ![Figure 2](images/Figure02.png)
 
 ###### CustomException_UserChoice
-I created a custom exception to display a reminder message when the user selection is not in the menu range.
+I created a custom exception to display a reminder message when the user selection is not in the menu range:
 ```
 class CustomException_UserChoice(Exception):
     """ Custom error message to raise if the user choice is not 1, 2, or 3

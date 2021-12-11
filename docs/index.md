@@ -34,7 +34,7 @@ As I built out the script, I re-used functions from similar scripts such as Assi
 #### Error Handling
 I added most of the error handling towards the end of my work on the script, primarily based on errors I received. The final version of the script uses try/except blocks to catch exceptions and present custom messages in the following cases:
 
-##### FileNotFoundError
+###### FileNotFoundError
 Used at the beginning of the script to differentiate runs where the file RSVP.dat is already present from runs where it is not. In the latter case, the user gets a message that this will be a new list. The file will be created at the end of the program if the user has entered data. The code for this block in the main body of the script is below
 
 ```
@@ -54,13 +54,13 @@ except FileNotFoundError:
     output_new_list_confirmation()  
 ```
 
-##### ValueError
+###### ValueError
 For the sum function to work, the user must enter group_size as an integer. I used int() when defining group_size, but a text entry like “Mary” throws a ValueError. This exception returns the user to the menu to try again.
 
 _Figure 2: ValueError text from Python_  
 ![Figure 2](images/Figure02.png)
 
-##### CustomException_UserChoice
+###### CustomException_UserChoice
 I created a custom exception to display a reminder message when the user selection is not in the menu range.
 ```
 class CustomException_UserChoice(Exception):
